@@ -5,12 +5,12 @@
         "../scss/main.scss",
         "../scss/_auth-form.scss",
         "../scss/_common.scss",
-        "../scss/_fonts.scss",
-        "../scss/_colors.scss",
+        "../scss/__fonts.scss",
+        "../scss/__colors.scss",
         "../scss/_otp-list.scss",
         "../scss/_common.scss",
-        "../scss/_fonts.scss",
-        "../scss/_colors.scss"
+        "../scss/__fonts.scss",
+        "../scss/__colors.scss"
     ],
     "names": [],
     "file": "main.css"

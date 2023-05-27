@@ -87,6 +87,7 @@ setInterval(() => {
    }
 }, 1000)
 
+// Not integrated with rest of the project
 const request = new Request('https://swapi.dev/api/people/?format=json');
 
 fetch(request)
@@ -96,3 +97,9 @@ fetch(request)
   .then(data => {
     console.log(data);
   });
+
+  // TODO: 
+  // - change localStorageUpdate to be called on beforeunload() event
+  // - integrate fetch() in project
+  // - delete inputbox after entering a value
+  // - add function for checking if the same name-code exists in order to prevent duplicates

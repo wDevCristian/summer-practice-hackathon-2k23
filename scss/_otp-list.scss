@@ -1,0 +1,45 @@
+@import '_common.scss';
+
+.otp-list{
+   &__item{
+      list-style: none;
+      margin-bottom: 1em;
+   
+      &-wrapper{
+         position: relative;
+         display: grid;
+         grid-template-columns: 80% 1fr;
+         grid-template-rows: repeat(2, 20px);
+         border: .5px solid $secondary-text-clr;
+         padding: 10px 15px;
+         border-radius: 2px;
+      }
+      
+      &-key{
+         grid-area: 1 / 1 / 2 / 2;
+         font-size: 1.3rem; 
+         @include bold;
+      }
+      
+      &-name-code{
+         grid-area: 2 / 1 / 3 / 2;
+         @include light;
+         font-size: 0.8rem;
+         padding-top: .5em;
+      }
+      
+      &-timer{
+         grid-area: 1 / 2 / 3 / 3;
+         text-align: center;
+         font-size: 2.25rem;
+      }
+
+      &-close{
+         position: absolute; 
+         right: -12px; 
+         top: -12px;
+         background-color: white;
+         cursor: pointer;
+      }
+   }
+}

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #2a2a2a;
+}
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #2a2a2a;
+}
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.otp-list__item {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.otp-list__item-wrapper {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 1fr;
+      grid-template-columns: 80% 1fr;
+  -ms-grid-rows: (20px)[2];
+      grid-template-rows: repeat(2, 20px);
+  border: 0.5px solid #3f3f3f;
+  padding: 10px 15px;
+  border-radius: 2px;
+}
+
+.otp-list__item-key {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.otp-list__item-name-code {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / 3 / 2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  padding-top: .5em;
+}
+
+.otp-list__item-timer {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 3 / 3;
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+.otp-list__item-close {
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  background-color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

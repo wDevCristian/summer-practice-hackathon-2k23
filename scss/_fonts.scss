@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+@mixin ff{
+   font-family: 'Montserrat', sans-serif;
+}
+
+@mixin light{
+   @include ff;
+   font-weight: 300;
+}
+
+@mixin regular{
+   @include ff;
+   font-weight: 400;
+}
+
+@mixin bold{
+   @include ff;
+   font-weight: 700;
+}

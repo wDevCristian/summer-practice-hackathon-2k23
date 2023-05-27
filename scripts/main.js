@@ -1,6 +1,22 @@
-// let {log, dir} = console;
+let {log, dir} = console;
 
 // Init with localStorage data
+const request = new Request('https://swapi.dev/api/people/?format=json');
+let response;
+
+fetch(request)
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+     log(data);
+      data.results.forEach(item => {
+         createNewOTP(generateRandomKey(), item.name)
+      })
+      updateLocalStorage();
+  });
+  
+
 let otpList = document.querySelector(".otp-list");
 otpList.innerHTML = localStorage.getItem("currentHTMLState");
 
@@ -88,15 +104,15 @@ setInterval(() => {
 }, 1000)
 
 // Not integrated with rest of the project
-const request = new Request('https://swapi.dev/api/people/?format=json');
+// const request = new Request('https://swapi.dev/api/people/?format=json');
 
-fetch(request)
-  .then(response => {
-    return response.json();
-  })
-  .then(data => {
-    console.log(data);
-  });
+// fetch(request)
+//   .then(response => {
+//     return response.json();
+//   })
+//   .then(data => {
+//     console.log(data);
+//   });
 
   // TODO: 
   // - change localStorageUpdate to be called on beforeunload() event
